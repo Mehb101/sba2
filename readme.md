@@ -1,0 +1,3 @@
+This is a simple, responsive website for a fictional company called Accessible Design Co. It features a header with a logo and navigation bar, a hero section with a background image and call-to-action button, an About section describing the company, a Services section with a grid layout of offerings, a Contact form with accessible labels, and a footer with social links. The site is built using semantic HTML and CSS with Flexbox and Grid, and it follows accessibility best practices for keyboard navigation, focus states, and meaningful alt text for images.  
+
+To view the site, simply open the `last.html` file in a web browser with the `last.css` file in the same folder. 
