@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessible Design Co.</title>
+  <link rel="stylesheet" href="last.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home">
+        <img src="adc-logo.jpg" alt="Accessible Design Co. logo" class="logo" />
+        <span class="sr-only">Accessible Design Co.</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Design that welcomes everyone</h1>
+        <p>We build inclusive, standards-compliant experiences so more people can use your product.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <div class="content-grid">
+      
+      <section id="about" class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Us</h2>
+        <article>
+          <h3>Our Mission</h3>
+          <p>
+            At Accessible Design Co., accessibility is the default. We help teams
+            ship delightful, robust interfaces that work for everyone—across devices, inputs, and contexts.
+          </p>
+        </article>
+        <article>
+          <h3>Our Approach</h3>
+          <p>
+            We combine usability research, WCAG conformance, and modern front-end engineering
+            to deliver results you can measure.
+          </p>
+        </article>
+      </section>
+
+      
+      <section id="services" class="services" aria-labelledby="services-heading">
+        <h2 id="services-heading">Services</h2>
+        <ul class="services-grid">
+          <li class="service-card">
+            <img src="design.png" alt="Design system components icon" width="160" height="160" />
+            <h3>Design Systems</h3>
+            <p>Accessible, themed component libraries with tokens and documentation.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="qa.png" alt="Keyboard and screen reader icon" width="160" height="160" />
+            <h3>Remediation & QA</h3>
+            <p>Keyboard, screen reader, and contrast fixes with test plans and CI checks.</p>
+          </li>
+
+          <li class="service-card">
+            <img src="team.png" alt="Training presentation icon" width="160" height="160" />
+            <h3>Team Training</h3>
+            <p>Workshops for designers, developers, and PMs to build accessible by default.</p>
+          </li>
+        </ul>
+      </section>
+
+      
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+
+        <form aria-describedby="contact-instructions" novalidate>
+          <p id="contact-instructions">Fields marked with * are required.</p>
+
+          <div class="form-field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required autocomplete="name" placeholder="Enter your full name"/>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="Enter valid email for contact"/>
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject *</label>
+            <input id="subject" name="subject" type="text" required placeholder="What’s your message about?"/>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Include any relevant details."></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send Message</button>
+          <p id="form-status" class="sr-only" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 Accessible Design Co.</p>
+      <ul class="social" aria-label="Social media links">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="mailto:hello@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
